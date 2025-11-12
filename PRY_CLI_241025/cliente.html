@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FACTURA</title>
+</head>
+<body>
+    <header>
+        <h1>FACTURACION DE LA EMPRESA FRUTI LOGO</h1>
+    </header>
+    
+    <main>
+        <form action="producto.html" method="get">
+            <table border="2" width="100%" >
+                <thead>
+                    <tr>
+                        <th colspan="6">
+                            FORMULARIO CLIENTE
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th colspan="6">
+                            <label for="foto">SUBA SU FOTO DE PERFIL</label>
+                            <input type="file" name="foto" id="foto" accept=".png,.jpg">
+                        </th>
+                    </tr>
+                    <tr>
+                        <th><label for="nombres">NOMBRES:</label></th>
+                        <td><input type="text" name="nombres" id="nombres" placeholder="Ejm.Nelson Rene" maxlenght="20" minlenght="5" required></td>
+                        <th><label for="apellidos">APELLIDOS:</label></th>
+                        <td><input type="text" name="apellidos" id="apellidos" placeholder="Ejm.Andino Martinez" maxlenght="20" minlenght="5" required></td>
+                         <th><label for="ced">CEDULA/RUC:</label></th>
+                        <td><input type="text" name="ced" id="ced" placeholder="1753634869" maxlenght="14" minlenght="10" required></td>
+                    </tr>
+
+                    <tr>
+                        <th><label for="direccion">DIRECCION:</label></th>
+                        <td colspan="2"><input type="text" name="direccion" id="direccion" placeholder="Barrio el Cisne Lote: 25" required></td>
+                        <th><label for="genero">GENERO:</label></th>
+                        <td colspan="2">
+                            <label for="hombre">HOMBRE</label>
+                            <input type="radio" name="sexo" id="hombre" value="HOMBRE" checked>
+                            <label for="mujer">MUJER</label>
+                            <input type="radio" name="sexo" id="mujer" value="MUJER">
+                            <label for="des">DESCONOCIDO</label>
+                            <input type="radio" name="sexo" id="des" value="DESCONOCIDO" disabled>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th><label for="email">CORREO:</label></th>
+                        <td colspan="2"><input type="email" name="email" id="email" placeholder="magzerok@gmail.com" required></td>
+                        <th><label for="tel">TELEFONO:</label></th>
+                        <td colspan="2"><input type="text" name="tel" id="tel" placeholder="0988344569" minlenght="4" maxlength="10"></td>
+                    </tr>S
+
+                    <tr>
+                        <th colspan="2" rowspan="2"><label for="prod">SU INTERES EN NUESTRA EMPRESA</label></th>
+                        <td colspan="4">
+                            <label for="compra">COMPRAR</label>
+                            <input type="radio" name="compra" id="compra" value="COMPRAR">
+                            <label for="v">VENDER ALGUN PRODUCTO</label>
+                            <input type="radio" name="v" id="v" value="VENDER">
+                            <label for="o">OTROS</label>
+                            <input type="radio" name="o" id="o" value="OTROS">
+                        </td>
+                    </tr>
+
+                </tbody>
+                <tfoot> 
+                    <tr>
+                        <th colspan="3"><input type="reset" name="vaciar" id="vaciar" value="Restablecer Valores Iniciales"></td>
+                        <th colspan="3"><input type="submit" name="enviar" id="enviar" value="ENVIAR FORMULARIO"></th>
+                    </tr>
+
+                </tfoot>
+
+            </table>
+
+        </form>
+    </main>
+    
+    <footer>
+        <p>c 2025DERECHOS RESERVADOS EMPRESA FRUTI LOGO/p>
+    </footer>
+</body>
+</html>
