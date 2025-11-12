@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SELECT</title>
+
+    <style>
+
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>SELECT EN FORMULARIO</h1>
+    </header>
+    <main>
+        <form action="server.html" method="get">
+
+            <label for="g">GENERAR ID BANNER</label>
+            <input type="text" name="g" id="g" pattern="[A-Z]{3}" required>
+
+            <!-- SELECT PARA FORM -->
+            <fieldset>
+                <label for="lenguaje_programacion">SELECCIONES SU LENGUAJE DE PROGRAMACION FAVORITO:</label>
+                <select name="lenguaje_programacion" id="lenguaje_programacion">
+                    <option value="c_mas_mas">C++</option>
+                    <option value="python">PYTHON</option>
+                    <option value="java">JAVA</option>
+                    <option value="HTML" disabled>HTML</option>
+                </select>
+
+                <input type="date">
+            </fieldset>
+            <!-- select para form -->
+             <!-- autofocus muestra el seleccionado por defecto -->
+            <label for="musica_favorita">SELECCIONE SU MUSICA FAVORITA:</label>
+            <select name="musica_favorita[]" id="musica_favorita" multiple required size="8" autofocus>
+                <optgroup title="REGUETON" label="REGUETON" pattern="2">
+                    <option value="LOBBA" selected>SHAKIRA LOBA</option>
+                    <option value="ANOCHE">BAD BUNNY</option>
+                    <option value="ALL_OF_ME" disabled>JONH LEJON ALL OF ME</option>
+                    <option value="TRISTE">JOSE JOSE TRISTE</option>
+                </optgroup>
+                <optgroup title="CHICHA" label="CHICHA">
+                    <option value="LOBBA">SHAKIRA LOBA</option>
+                    <option value="ANOCHE" selected>BAD BUNNY</option>
+                    <option value="ALL_OF_ME" disabled>JONH LEJON ALL OF ME</option>
+                    <option value="TRISTE">JOSE JOSE TRISTE</option>
+                </optgroup>
+            </select>
+            <br>
+
+            <!-- text area para form -->
+            <label for="frase_motivadora">INGRESE SU FRASE DEL DIA DE HOY</label> 
+            <textarea name="frase_motivadora" id="frase_motivadora" cols="30" rows="15" required >BUENOS DIAS DE PROGRAMACION </textarea>
+
+            <!-- hidden -->
+            <input type="hidden" name="cedula_usuario" value="21000978812">
+
+            <!-- <input type="submit" value="ENVIAR AL SERVIDOR"> -->
+            <button type="submit">ENVIAR AL SERVIDOR</button>
+
+        </form>
+
+    <footer>
+
+    </footer>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJERCICIO EN CLASE</title>
+</head>
+<body>
+    <form action="server.html" method="get">
+        <h1>REGISTRO DE ESTUDIANTES</h1>
+        <label for="nombre">INGRESE SUS NOMBRES:</label>
+        <input type="text" name="nombre" id="nombre" required>
+        <br>
+
+        <label for="cedula">INGESE SU CEDULA</label>
+        <input type="number" name="cedula" id="cedula" required pattern="[0-9]{10}" placeholder="2100097886">
+        <br>
+
+        <label for="fecha_nacimiento">INGRESE SU FECHA DE NACIMIENTO:</label>
+        <input type="date" name="cedula" id="cedula" max="2010-10-27" min="2005-10-27">
+        <br>
+
+        <label for="">SELECCIONE SUS MATERIAS:</label>
+        <ul>
+            <li>
+                <label for="modelos">MODELOS PROCESOS DESARROLLO</label>
+                <input type="checkbox" name="materias[]" id="modelos" required>
+            </li>
+
+            <li>
+                <label for="pro">PROGRAMACION WEB</label>
+                <input type="checkbox" name="materias[]" id="pro" required>
+            </li>
+
+
+            <li>
+                <label for="digital">COMPUTACION DIGITAL</label>
+                <input type="checkbox" name="materias[]" id="digital" required>
+            </li>
+
+            <li>
+                <label for="estructura">ESTRUCTURA DE DATOS</label>
+                <input type="checkbox" name="materias[]" id="jueves" required>
+            </li>
+
+            <li>
+                <label for="usa">USABILIDAD</label>
+                <input type="checkbox" name="materias[]" id="usa" disabled>
+            </li>
+
+            <li>
+                <label for="poo">PROGRAMACION ORIENTADA A OBJETOS</label required>
+                <input type="checkbox" name="materias[]" id="poo">
+            </li>
+        </ul>
+        <br>
+
+        <label for="hoja_vida">SUBA SU HOJA DE VIDA:</label>
+        <input type="file" name="hoja_vida" id="hoja_vida" accept=".pdf" required>
+        <br>
+
+        <label for="gen_id">GENERAR ID BANNER</label>
+        <input type="text" name="gen_id" id="gen_id" pattern="[A-Z]{3}[0-9]{5}" placeholder="LMU" required>
+        <br>
+
+        <button type="submit">ENVIAR REGISTRO</button>
+
+    </form>
+    
+</body>
+</html>
